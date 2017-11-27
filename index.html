@@ -12,6 +12,10 @@
 <body>
     <div id="app">
       <img id="board" width="360px" height="360px" src="assets/resources/board.png">
+      <template id="tileList" v-for="tile in tiles">
+        <span v-html="createTile(tile)"></span>
+        {{ nameTile(tile.name) }}
+      </template>
     </div>
 
     <script src="assets/js/vue.min.js"></script>

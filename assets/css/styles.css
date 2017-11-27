@@ -8,6 +8,7 @@
   background-color: #eee;
 }
 
-#tile {
+.tile {
   position: absolute;
+  background-color: #0f0;
 }
