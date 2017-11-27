@@ -1,0 +1,13 @@
+#app {
+
+}
+
+#board {
+  position: relative;
+  display: block;
+  background-color: #eee;
+}
+
+#tile {
+  position: absolute;
+}
