@@ -11,10 +11,14 @@
 
 <body>
     <div id="app">
-      <img id="board" width="360px" height="360px" src="assets/resources/board.png">
-      <template id="tileList" v-for="tile in tiles">
-        <span v-html="createTile(tile)"></span>
-      </template>
+      <div id="game" v-on:click="clickedOnTile">
+        <img id="board" width="360px" height="360px" src="assets/resources/board.png">
+        <template id="tileList" v-for="tile in tiles">
+          <span v-html="createTile(tile)"></span>
+        </template>
+        <button id="resetButton" style="width: 360px" v-show="gameHasEnded" v-on:click="resetGame">Reset</button>
+        <p id="praiseText" style="width: 360px; text-align: center;"></p>
+      </div>
     </div>
 
     <script src="assets/js/vue.min.js"></script>
