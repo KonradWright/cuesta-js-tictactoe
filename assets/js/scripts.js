@@ -94,6 +94,7 @@ new Vue({
         tile.content = "";
       });
       this.isPlayerOneTurn = true;
+      this.gameIsTied = false;
       this.gameHasEnded = false;
     }
   }
